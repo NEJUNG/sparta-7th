@@ -1,14 +1,92 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>원페이지쇼핑몰</title>
-    </head>
-    <body>
-        <img src="..." class="img-fluid" alt="Responsive image">
-        <div class="header">
-            <span><h1>물건을 팝니다</h1></span>
-            <span><h3>가격: 어쩌고</h3></span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원페이지 쇼핑몰</title>
+    <style>
+        body {
+            font-family: 'Nanum Myeongjo', serif;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub-title {
+            Padding-right: 10px;
+            margin-right: 10px;
+        }
+
+        .price-desc {
+            font-size: 12px;
+        }
+
+        .form-text {
+            font-size: 17px;
+        }
+
+        .form-control {
+            border: 2px solid black;
+            margin: 4px;
+            width: 150px;
+            height: 25px;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+
+        }
+
+    </style>
+
+<body>
+    <div class="img">
+        <img src="https://img.insight.co.kr/static/2019/08/01/700/84h6yncso2x016weze6e.jpg" width=400 height=300 />
+        <div class="container">
+            <div class="jumbotron">
+                <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+                <h1 class="display-4">
+                    <span>광어광어회</span>
+                    <span class="price-desc">합리적인 가격 20,000원</span>
+                </h1>
+                <p>둘이먹다 하나가 사라져도 아무도 모를 맛 오지고 지리고 맛있고!</p>
+            </div>
         </div>
-    </body>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+            <h1 class="display-4"><span>주문하기</span></h1>
+        </div>
+    </div>
+    <form>
+        <div class="sub-title">
+            <div class="form-group">
+                <div class="form-text"><label for="form-text">주문자 성함</label>
+                    <center><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></center>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-text"><label for="form-text">수량</label>
+                    <center><input type="text" class="form-control" id="exampleInputPassword1"></center>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-text"><label for="form-text">주소</label>
+                    <center><input type="text" class="form-control" id="exampleInputPassword1"></center>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-text"><label for="form-text">전화번호</label>
+                    <center><input type="tel" class="form-control" id="exampleInputPassword1"></center>
+                </div>
+            </div>
+        </div>
+        <center><button type="submit" class="btn btn-primary">주문하기</button></center>
+    </form>
+</body>
+</head>
+
 </html>
